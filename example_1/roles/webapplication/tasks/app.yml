@@ -2,8 +2,7 @@
 
 - apt: name=python-pip state=present
 
-- git: repo={{app_repo}}
-       dest="{{app_download_dest}}"
+- git: repo={{app_repo}} dest="{{app_download_dest}}"
 
 - pip: requirements={{app_download_dest}}/app/requirements.txt
 
