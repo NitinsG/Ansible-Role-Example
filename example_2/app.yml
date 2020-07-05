@@ -1,0 +1,8 @@
+---
+- name: Provision InfluxDB server
+  hosts: all
+  vars:
+    influxdb_username: admin
+    influxdb_password: influxdb4ever
+  roles:
+    - influxdb
